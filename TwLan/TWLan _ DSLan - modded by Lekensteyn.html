@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0027)http://twlan.lekensteyn.nl/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TWLan / DSLan - modded by Lekensteyn</title>
+<style></style></head>
+<body>
+<h1>TWLan / DSLan - modded by Lekensteyn</h1>
+<p>This package is much smaller compared to the offical downloads from <a href="http://www.twlan.org/" target="_blank">www.twlan.org</a> because unnecessary parts are stripped out. Furthermore, improvements have been made on the code, by adding features and fixing bugs. One of these features is full support for <a href="http://twlan.lekensteyn.nl/#graphic-packages">Graphics packages</a><br>
+Translations are available for:</p>
+<ul>
+<li>German (Deutsch)</li>
+<li>Dutch (Nederlands)</li>
+<li>English</li>
+</ul>
+<p>Links:</p>
+<ul>
+<li><a href="http://www.twlan.org/">www.twlan.org</a> (this package is based on their work)</li>
+<li><a href="http://www.twlan.org/showthread.php?tid=3540" target="_blank">Forum thread on www.twlan.org</a></li>
+<li><a href="http://www.tribalwars.net/">www.tribalwars.net</a> (the official game)</li>
+</ul>
+<h3 id="installation">Installation instructions</h3>
+<p>Download the installer (see <a href="http://twlan.lekensteyn.nl/#downloads">downloads</a>) and put it in your home directory.<br>
+After the download has finished, <a href="https://help.ubuntu.com/community/UsingTheTerminal#Starting%20a%20Terminal" target="_blank">start a terminal</a>, and run 
+<input type="text" size="30" onclick="this.select();" readonly="readonly" value="sudo sh ./twlan-1.4.3L1.sh">.<br>
+Follow the on-screen instructions.</p>
+
+<h3 id="graphic-packages">Graphic packages</h3>
+<p>Users can always set their preffered graphic packages in Settings =&gt; Settings. You can set the default graphic package in <em>htdocs/include/config.php</em>.<br>
+The best way to make a graphic package available is by placing it in the htdocs directory.</p>
+
+<h4>Linux:</h4>
+<p><em>In these instructions, I'm using Ubuntu. The commands may differ for your distro. If you can't get it working, ask for help at the TWLan topic.</em></p>
+<p>Because Linux is protected by directory permissions, you cannot download a package and place it in the htdocs directory directly. Instead, you have to <a href="https://help.ubuntu.com/community/UsingTheTerminal#Starting%20a%20Terminal" target="_blank">start a terminal</a> and run some commands. If you would like to install the Winter graphic package, run:<br>
+<textarea class="code" cols="70" rows="3">cd /opt/twlan/htdocs
+sudo -u nobody wget 'http://twlan.lekensteyn.nl/files/winter.zip'
+sudo -u nobody unzip winter.zip</textarea><br>
+You can copy and paste this in your terminal, replace <em>http://twlan.lekensteyn.nl/files/winter.zip</em> by the actual URL and <em>winter.zip</em> by the actual file name.<br>
+If you get an error like <em>bash: wget: command not found</em>, run <em>sudo apt-get install wget</em>.<br>
+If you get an error like <em>bash: unzip: command not found</em>, run <em>sudo apt-get install unzip</em>.</p>
+
+<h3 id="downloads">Downloads</h3>
+<p>By downloading these files, you agree with the <a href="http://www.twlan.org/en/showthread.php?tid=3598" target="_blank">terms of use</a>. In short, you are not allowed to play or host TWLan online.</p>
+<p>Downloads:</p><ul><li><a href="http://twlan.lekensteyn.nl/files/twlan-1.4.3L1.sh">twlan-1.4.3L1.sh</a> (9.76 MB)<br>TWLan v1.4.3L1 installer for Linux. <strong>The download before 29 October 2010 at 10:42AM GMT+1 was broken, please download it again if you downloaded it before that date</strong></li><li><a href="http://twlan.lekensteyn.nl/files/README-1.4.3L1.txt">README-1.4.3L1.txt</a> (5.84 kB)<br>Readme file for TWLan 1.4.3L1</li><li><a href="http://twlan.lekensteyn.nl/files/gfx4.zip">gfx4.zip</a> (2.42 MB)<br>Classic graphic package for TWLan</li><li><a href="http://twlan.lekensteyn.nl/files/gfx45.zip">gfx45.zip</a> (2.47 MB)<br>v4.5 graphic package for TWLan</li><li><a href="http://twlan.lekensteyn.nl/files/winter.zip">winter.zip</a> (3.48 MB)<br>Winter graphic package for TWLan</li><li><a href="http://twlan.lekensteyn.nl/files/gfx5.zip">gfx5.zip</a> (2.72 MB)<br>V5 graphic package for TWLan (included by default)</li><li><a href="http://twlan.lekensteyn.nl/files/de.ini">de.ini</a> (59.55 kB)<br>German (Deutsch) translation of TWLan</li><li><a href="http://twlan.lekensteyn.nl/files/en.ini">en.ini</a> (55.71 kB)<br>English translation of TWLan</li><li><a href="http://twlan.lekensteyn.nl/files/nl.ini">nl.ini</a> (59.37 kB)<br>Dutch (Nederlands) translation of TWLan</li></ul>
+</body></html>
